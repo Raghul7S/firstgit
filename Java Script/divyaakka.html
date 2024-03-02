@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="divyaakka.js"></script>
+</head>
+<body>
+
+    <!-- <input type="text" id="myInput" onchange="myFunction()">
+<script>
+  function myFunction() {
+    alert("The value has changed!");
+  }
+</script> -->
+
+<!-- <button onclick="myFunction()">Click me</button>
+<script>
+  function myFunction() {
+    alert("Button clicked!");
+  }
+</script> -->
+
+<!-- <p onmouseover="myFunction()">Hover over me</p>
+<script>
+  function myFunction() {
+    alert("Mouse over the div!");
+  }
+</script> -->
+
+<!-- <div onmouseout="myFunction()">Mouse out of me</div>
+<script>
+  function myFunction() {
+    alert("Mouse out of the div!");
+  }
+</script> -->
+
+<!-- <input type="text" onkeydown="myFunction()">
+<script>
+  function myFunction() {
+    alert("Key pressed!");
+  }
+</script> -->
+
+ <!-- <body onload="myFunction()">
+    <p>Page loaded!</p>
+  </body>
+  <script>
+    function myFunction() {
+      alert("Page has loaded!");
+    }
+  </script>  -->
+  <p id="demo"></p>
+  <p id="memo"></p>
+  <p id="value1"></p>
+  <p id="slice"></p>
+  <p id="value2"></p>
+  <p id="value3"></p>
+  <p id="value4"></p>
+  <p id="value5"></p>
+  <p id="value6"></p>
+  <p id="value7"></p>
+  <p id="value8"></p>
+  <script>
+    //length
+    var text = "HELLO WORLD";
+    document.getElementById("demo").innerHTML = text.length;
+    //charAT
+    var value = "HELLO WORLD";
+    document.getElementById("memo").innerHTML = value.charAt(1);
+    //at() the main difference in at is allowed negative values but charat is not allowed the negative values
+    var value1 = "HELLO WORLD";
+    document.getElementById("value1").innerHTML = value1.at(-2);
+    //string slice
+    let you = "AppleBanana";
+    let part = you.slice(7,13);
+    document.getElementById("slice").innerHTML = part; 
+    //upper 
+    var value2 = "hai hellow";
+    let parts = value2.toUpperCase();
+    document.getElementById("value2").innerHTML = parts
+    //lower
+    var mes1 = "HELLO WORLD";
+    let mes = mes1.toLowerCase();
+    document.getElementById("value3").innerHTML = mes
+    //concat
+    let text1 = "Hello";
+    let text2 = "World!";
+    let text3 = text1.concat(text2);
+    document.getElementById("value4").innerHTML = text3;
+    //trim(having two types trimStart,trimEnd)
+    let text5 = "     Hello World!     ";
+    let text4 = text5.trim();
+    document.getElementById("value5").innerHTML =
+    "Length text1 = " + text5.length + "<br>Length text2 = " + text4.length;
+    //pad (padEnd)
+    let text6 = "5";
+    text7 = text6.padEnd(4,"0");
+    document.getElementById("value6").innerHTML = text7;
+    //repeat
+    let text9 = "Hello world!";
+    let result = text9.repeat(2);
+    document.getElementById("value7").innerHTML = result;
+    //replace
+    let text8="dhanu";
+    let value8=text8.replace("dhanu","ram");
+    document.getElementById("value8").innerHTML = value8;
+    // template string
+    let text10 =
+  
+    `The quick
+    brown fox
+    jumps over
+    the lazy dog`;
+    
+    document.getElementById("value9").innerHTML = text10;
+    //templatevalue
+    // let firstName = "John";
+    // let lastName = "Doe";
+    // let text11 = Welcome ${firstName}, ${lastName}!;
+    // document.getElementById("value10").innerHTML = text11;
+  </script>
+</body>
+</html>
